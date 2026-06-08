@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Future Headlines</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=UnifrakturMaguntia&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+
+    <!-- ── CONTROL PANEL ── -->
+    <div class="control-panel">
+      <div class="app-brand">
+        <h1>Future Headlines</h1>
+        <p>Dispatches from Tomorrow's World</p>
+      </div>
+      <div class="controls-row">
+        <div class="control-group" style="max-width:130px">
+          <label for="yearInput">Year</label>
+          <input type="number" id="yearInput" placeholder="2077" min="2025" max="9999" value="2077">
+        </div>
+        <div class="control-group">
+          <label for="themeSelect">Theme</label>
+          <select id="themeSelect">
+            <option value="Kerala">Kerala</option>
+            <option value="India">India</option>
+            <option value="World">World</option>
+            <option value="Technology">Technology</option>
+            <option value="Climate">Climate</option>
+            <option value="Space">Space</option>
+            <option value="Sports">Sports</option>
+            <option value="Gaming">Gaming</option>
+            <option value="Mars Colony">Mars Colony</option>
+            <option value="Economy">Economy</option>
+            <option value="Health &amp; Medicine">Health &amp; Medicine</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label>Future Mode</label>
+          <div class="mode-pills">
+            <button class="mode-pill" data-mode="Optimistic" id="pill-optimistic">✦ Bright</button>
+            <button class="mode-pill active-neutral" data-mode="Neutral" id="pill-neutral">◈ Neutral</button>
+            <button class="mode-pill" data-mode="Dystopian" id="pill-dystopian">☠ Dark</button>
+          </div>          
+        </div>
+        <button class="generate-btn" id="generateBtn">Print Edition →</button>
+      </div>
+      <div class="control-group">
+  <label for="apiKeyInput">Gemini API Key</label>
+  <input
+    type="password"
+    id="apiKeyInput"
+    placeholder="AIza..."
+  >
+</div>
+    </div>
+
+    <!-- ── LOADING ── -->
+    <div class="loading-overlay" id="loadingOverlay">
+      <div class="press-animation">
+        <div class="press-bar"></div>
+        <div class="press-bar"></div>
+        <div class="press-bar"></div>
+        <div class="press-bar"></div>
+        <div class="press-bar"></div>
+      </div>
+      <p class="loading-text">Setting type for the future...</p>
+    </div>
+
+    <!-- ── NEWSPAPER STAGE ── -->
+    <div class="newspaper-stage" id="paperStage">
+      <div class="welcome-screen">
+        <div class="welcome-ornament">✦</div>
+        <p class="welcome-title">What will tomorrow's headlines say?</p>
+        <div class="horizontal-rule-fancy">❧</div>
+        <p class="welcome-sub">
+          Choose a year, a theme, and a future mode —<br>
+          then press <em>Print Edition</em> to receive your dispatch from another time.
+        </p>
+      </div>
+    </div>
+
+  </div><!-- /app-shell -->
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
+
+
+
