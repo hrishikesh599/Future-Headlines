@@ -669,3 +669,46 @@ select option { background: #0d0a05; }
   visibility: visible;
   opacity: 1;
 }
+.founders-seal {
+  margin-top: 2rem;
+  padding: 1rem;
+
+  text-align: center;
+
+  border-top: 3px double #1a1209;
+}
+
+.seal-ornament {
+  font-size: 1.4rem;
+  color: #8a7040;
+  margin-bottom: 0.3rem;
+}
+
+.seal-text {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #8a7040;
+}
+
+.seal-name {
+  margin-top: 0.35rem;
+
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+  color: #1a1209;
+}
+
+.seal-year {
+  margin-top: 0.2rem;
+
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.55rem;
+
+  letter-spacing: 2px;
+  color: #8a7040;
+}
