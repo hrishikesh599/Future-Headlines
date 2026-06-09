@@ -1,46 +1,56 @@
-# Future Headlines
+# 📰 MemeNews AI
 
-An AI-powered time-travel newspaper that lets you explore fictional headlines from the future.
+An AI-powered newspaper generator that creates a personalized newspaper experience from topics you choose, complete with custom sections, mood-based content, and printable output.
 
-Future Headlines generates an entire newspaper front page based on a topic, year, and narrative mode, creating an immersive reading experience that feels like opening a newspaper from another era.
+> Who likes reading newspapers? We like reading memes. 😎
 
----
 
-## Inspiration
+## 🚀 Try It
 
-This project started as an experiment to learn how APIs work in web applications.
-
-What began as a simple idea gradually evolved into a full project involving Python, Flask, JavaScript, API integration, deployment, UI design, and debugging.
-
-The biggest challenge was not the AI integration—it was the newspaper design itself. I experimented with multiple themes including:
-
-* Futuristic newspapers
-* Cosmic newspapers
-* Time-travel newspapers
-
-After many redesigns and CSS rewrites, I returned to the original vision: an ancient, mythic-inspired newspaper aesthetic.
-
-The result is a vintage newspaper experience that generates stories from the future.
+**Live Demo:** https://future-headlines.onrender.com/
 
 ---
 
-## Features
+## ✨ Features
 
-* Generate future news based on any topic
-* Select a future year
-* Choose different news modes:
+### 📝 BYO API System
 
-  * Optimistic
-  * Neutral
-  * Dystopian
-* AI-generated headlines and articles
-* Vintage newspaper-inspired layout
-* Responsive design for desktop and mobile
-* User-provided Gemini API key support
+Bring your own Gemini API key and start generating content instantly.
+
+### 📅 Year-in-Review Section
+
+Generate a summary of major events from a selected year.
+
+### 📰 Topic-Based News
+
+Choose a topic and generate a custom newspaper section around it.
+
+### 😊 Mood-Based Content
+
+Select a mood and receive content tailored to that vibe.
+
+### ⚡ Fast API Setup
+
+Built-in API portal allows users to add their Gemini API key in under a minute.
 
 ---
 
-## Tech Stack
+## 📸 How It Works
+
+1. Enter your Gemini API key.
+2. Select a year.
+3. Choose a news topic.
+4. Select a mood.
+5. Generate your newspaper.
+---
+
+## 🛠️ Tech Stack
+
+### Backend
+
+* Python
+* Flask
+* Gemini API
 
 ### Frontend
 
@@ -48,95 +58,41 @@ The result is a vintage newspaper experience that generates stories from the fut
 * CSS
 * JavaScript
 
-### Backend
-
-* Python
-* Flask
-
-### AI
-
-* Google Gemini API
-
 ### Deployment
 
 * Render
+* GitHub
 
 ---
 
-## What I Learned
+## ⚙️ Local Setup
 
-Through this project I learned:
+### Prerequisites
 
-* How to work with APIs in web applications
-* How frontend and backend communicate
-* Using Flask for web development
-* Handling JSON responses from APIs
-* Debugging deployment issues
-* Reading logs and tracing errors
-* Working with Git and GitHub
-* Deploying applications to Render
-* Designing user interfaces with CSS
+* Python 3.10+
+* Gemini API Key
 
-One of the most valuable lessons was learning that not every error comes from code. During development I spent hours debugging an issue that turned out to be caused by model access limitations and API tier restrictions rather than a programming mistake.
-
----
-
-## Challenges
-
-### Newspaper Design
-
-The newspaper layout took the longest time to build.
-
-Creating something that felt like a real newspaper while still being readable and responsive required numerous redesigns and CSS experiments.
-
-### Gemini Model Issues
-
-Initially the application used Gemini 2.5 Flash. After deployment I repeatedly encountered usage and access issues.
-
-After extensive debugging, forum research, and code reviews, I discovered that the problem was related to model availability and tier limitations rather than my implementation.
-
-Switching to a compatible model resolved the issue.
-
-### Formatting AI Output
-
-Generating content was only half the challenge.
-
-The AI responses needed to be transformed into a structured newspaper format, which required careful handling of JSON data and layout design.
-
----
-
-## Future Improvements
-
-* Multiple newspaper themes
-* Historical newspaper mode
-* PDF newspaper export
-* Shareable newspaper links
-* Custom illustrations and images
-* Additional storytelling modes
-
----
-
-## Running Locally
-
-1. Clone the repository
+### Installation
 
 ```bash
-git clone https://github.com/hrishikesh599/Future-Headlines.git
-```
-
-2. Install dependencies
-
-```bash
+git clone https://github.com/hrishikesh599/future-headlines.git
+cd future-headlines
 pip install -r requirements.txt
 ```
 
-3. Run the application
+### Run the Application
 
 ```bash
 python app.py
 ```
 
-4. Open your browser and visit
+or
+
+```bash
+flask run
+```
+
+Open:
 
 ```text
 http://localhost:5000
@@ -144,12 +100,51 @@ http://localhost:5000
 
 ---
 
-## Project Status
+## 🧠 Development Journey
 
-Completed and deployed.
+This project started from curiosity and a desire to build something fun with AI.
 
-Built as a learning project to explore AI APIs, web development, and creative interface design.
+The original idea was a simple news website powered by Gemini. Along the way, the project went through multiple redesigns, API issues, quota limits, deployment challenges, broken JSON responses, and several complete rewrites. The UI evolved from a basic newspaper layout into a modern design inspired by futuristic and tech-oriented aesthetics.
+
+One of the biggest challenges was working within free-tier API limits and handling inconsistent API responses. To make the project more accessible, a BYO API system was added so users can generate content using their own Gemini API key.
+
+Despite technical setbacks, deployment issues, and several redesigns, the project eventually became a fully functional AI newspaper generator with customizable sections and printable output.
 
 ---
 
-Created by Hrishikesh
+## 🎯 Challenges Faced
+
+* Gemini API quota limitations
+* Free-tier restrictions
+* Broken API response structures
+* Deployment issues on hosting platforms
+* Multiple frontend redesigns
+* JSON parsing and formatting problems
+* API key management
+
+---
+
+## 🔮 Future Improvements
+
+* Save generated newspapers
+* Multiple newspaper themes
+* More mood categories
+* AI-generated images
+* User accounts and saved history
+* PDF export support
+* Additional news section types
+
+---
+
+## 🙏 Acknowledgements
+
+* Google Gemini API
+* Flask
+* Python Community
+* Open Source Design Resources
+
+---
+
+## 📄 License
+
+MIT License
