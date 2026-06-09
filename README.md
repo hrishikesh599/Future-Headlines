@@ -75,8 +75,8 @@ Built-in API portal allows users to add their Gemini API key in under a minute.
 ### Installation
 
 ```bash
-git clone https://github.com/hrishikesh599/future-headlines.git
-cd future-headlines
+git clone https://github.com/hrishikesh599/Future-Headlines.git
+cd Future-Headlines
 pip install -r requirements.txt
 ```
 
